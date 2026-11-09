@@ -1,0 +1,40 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Csatlakozás a Jarvishoz",
+        "description": "Egy futó jarvis-gateway címe, a Home Assistantnak szánt bearer, és a nyelv, amelyen Jarvis új beszélgetést kezd.",
+        "data": {
+          "url": "Gateway URL",
+          "bearer": "Home Assistant bearer",
+          "language": "Nyelv"
+        },
+        "data_description": {
+          "url": "A gateway alap URL-je, záró perjel és útvonal nélkül.",
+          "bearer": "A gateway JARVIS_GATEWAY_HA_BEARER értéke.",
+          "language": "hu vagy en. Ezen a nyelven szól Jarvis akkor is, ha a gateway hibázik."
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "A gateway nem úgy válaszolt, ahogy a jarvis-gateway szokott.",
+      "invalid_auth": "A gateway elutasította a bearert."
+    },
+    "abort": {
+      "already_configured": "Ez a gateway már be van állítva."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Jarvis",
+        "data": {
+          "language": "Nyelv"
+        },
+        "data_description": {
+          "language": "hu vagy en. Egy már futó beszélgetés megtartja a saját nyelvét."
+        }
+      }
+    }
+  }
+}

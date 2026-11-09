@@ -1,0 +1,40 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connect to Jarvis",
+        "description": "The address of a running jarvis-gateway, the bearer it holds for Home Assistant, and the language Jarvis uses for a new conversation.",
+        "data": {
+          "url": "Gateway URL",
+          "bearer": "Home Assistant bearer",
+          "language": "Language"
+        },
+        "data_description": {
+          "url": "The gateway's base URL, without a trailing slash or a path.",
+          "bearer": "The value of JARVIS_GATEWAY_HA_BEARER on the gateway.",
+          "language": "hu or en. Also the language of the lines Jarvis speaks when the gateway fails."
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "The gateway did not answer as jarvis-gateway would.",
+      "invalid_auth": "The gateway refused the bearer."
+    },
+    "abort": {
+      "already_configured": "This gateway is already configured."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Jarvis",
+        "data": {
+          "language": "Language"
+        },
+        "data_description": {
+          "language": "hu or en. A conversation already running keeps its own language."
+        }
+      }
+    }
+  }
+}
