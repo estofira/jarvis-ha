@@ -38,3 +38,8 @@ Only a turn heard by an Assist satellite, with no logged-in user attached, is
 treated as the operator speaking. Text typed into Assist, and any automation or
 script calling the agent, is sent to Jarvis marked as forwarded: Jarvis reads it
 as data and will not act on it.
+
+## Versions
+
+Each release is numbered when it is published, and only when the integration
+itself changed. Home Assistant offers a newer release under Settings › Updates.
