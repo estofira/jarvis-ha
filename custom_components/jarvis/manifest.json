@@ -6,8 +6,8 @@
   "dependencies": ["conversation"],
   "documentation": "https://github.com/estofira/jarvis-ha",
   "integration_type": "service",
-  "iot_class": "local_polling",
+  "iot_class": "local_push",
   "issue_tracker": "https://github.com/estofira/jarvis-ha/issues",
   "requirements": [],
-  "version": "0.1.1"
+  "version": "0.1.2"
 }
